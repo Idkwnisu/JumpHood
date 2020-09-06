@@ -79,7 +79,7 @@ MonoBehaviour:
   gate: {fileID: 1544341892827847869}
   target: {fileID: 1544341891037239728}
   active: 0
-  lambda: 10
+  lambda: 100
 --- !u!65 &1544341892782910880
 BoxCollider:
   m_ObjectHideFlags: 0
