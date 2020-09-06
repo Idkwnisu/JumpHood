@@ -66,11 +66,13 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0006d67122aafb641ab0a4ed5f8537e9, type: 3}
   - {fileID: 8300000, guid: 56283672a7d561e4ebc9770ae312071e, type: 3}
   - {fileID: 8300000, guid: 6e538dbea2338fb43b024002f9c8cd07, type: 3}
+  - {fileID: 8300000, guid: 0a87c7ac6c9c48f45a5cfc624a10e4eb, type: 3}
   nameOfClips:
   - Jump
   - Death
   - Boost
   - Respawn
+  - Gate
 --- !u!82 &2066287508
 AudioSource:
   m_ObjectHideFlags: 0

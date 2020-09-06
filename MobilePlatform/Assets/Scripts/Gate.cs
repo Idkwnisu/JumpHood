@@ -12,6 +12,8 @@ public class Gate : MonoBehaviour
     public bool active = false;
 
     public float lambda = 50.0f;
+
+    private bool closed = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +23,14 @@ public class Gate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(active)
+        if(active && !closed)
         {
             gate.transform.position = Gate.DampVector(gate.transform.position, target.position, lambda, Time.deltaTime);
+            if(Vector3.Distance(gate.transform.position, target.position) < 0.01f)
+            {
+                AudioManager.Instance.PlayAudioClue("Gate");
+                closed = true;
+            }
         }
     }
 
